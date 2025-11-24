@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Southern Skies Summer School</title>
+    <meta name="description"
+        content="A student astronomy summer school exploring the universe, from stars and galaxies to data and instrumentation." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Decorative background -->
+    <div class="bg-stars"></div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#top" class="logo">
+                <span class="logo-mark">★</span>
+                <span class="logo-text">Southern Skies <span class="logo-sub">Summer School</span></span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#program">Program</a></li>
+                    <li><a href="#speakers">Lecturers</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#apply">Apply</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <a class="header-cta" href="#apply">Apply now</a>
+        </div>
+    </header>
+
+    <main id="top">
+        <!-- HERO -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <p className="eyebrow">Undergraduate & Honours · 2026</p>
+                    <h1 id="hero-title">Southern Skies Student Astronomy Summer School</h1>
+                    <p class="hero-tagline">
+                        One week under dark skies learning modern astrophysics, data analysis,
+                        and the art of turning photons into discovery.
+                    </p>
+                    <div class="hero-meta">
+                        <div class="hero-chip">📍 Canberra, Australia</div>
+                        <div class="hero-chip">🗓 12–18 January 2026</div>
+                        <div class="hero-chip">👩‍🎓 For senior undergrads & early grad students</div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#apply" class="btn btn-primary">Apply now</a>
+                        <a href="#program" class="btn btn-ghost">View program</a>
+                    </div>
+                    <p class="hero-deadline">
+                        Application deadline: <strong>1 October 2025</strong>
+                    </p>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="orbit-card">
+                        <div class="orbit orbit-1"></div>
+                        <div class="orbit orbit-2"></div>
+                        <div class="orbit orbit-3"></div>
+                        <div class="planet planet-main"></div>
+                        <div class="planet planet-small"></div>
+                        <div class="planet planet-tiny"></div>
+                        <p class="orbit-caption">From pixels to physics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="container section-inner">
+                <header class="section-header">
+                    <h2>About the school</h2>
+                    <p>
+                        The Southern Skies Summer School is an intensive, residential program for students
+                        who want a deeper, more hands-on experience of modern astronomy. You’ll spend a week
+                        learning from active researchers, working on mini-projects, and building a community
+                        that lasts long after the last observing night.
+                    </p>
+                </header>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3>Observe the universe</h3>
+                        <p>
+                            Spend time at the telescope, from planning observations to calibrating and
+                            reducing your own data. Weather permitting, you’ll get real photons from
+                            the night sky into your notebook.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Learn by doing</h3>
+                        <p>
+                            Short lectures are paired with labs in Python and Jupyter. Topics range
+                            from exoplanets and galaxies to time-domain astronomy and machine learning
+                            in astrophysics.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Meet your future peers</h3>
+                        <p>
+                            Connect with students from across the country and beyond. Share ideas,
+                            plan collaborations, and get a realistic picture of research life.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Accessible & supportive</h3>
+                        <p>
+                            We welcome applicants from diverse backgrounds and support those who are
+                            new to coding, statistics, or research environments.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROGRAM -->
+        <section id="program" class="section section-alt">
+            <div class="container section-inner">
+                <header class="section-header">
+                    <h2>Program overview</h2>
+                    <p>
+                        A balanced mix of lectures, hands-on labs, project time, and evening activities.
+                        The final schedule will be published closer to the event, but the structure
+                        will look roughly like this:
+                    </p>
+                </header>
+
+                <div class="program-layout">
+                    <div class="program-timeline">
+                        <h3>Sample week</h3>
+                        <ul class="timeline">
+                            <li>
+                                <span class="timeline-day">Day 1</span>
+                                <div>
+                                    <h4>Foundations & orientation</h4>
+                                    <p>Welcome, intro to the campus and observatory, recap of core astronomy and
+                                        statistics.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="timeline-day">Day 2</span>
+                                <div>
+                                    <h4>Stars & stellar evolution</h4>
+                                    <p>From the HR diagram to stellar interiors, with labs using real survey data.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="timeline-day">Day 3</span>
+                                <div>
+                                    <h4>Galaxies & cosmology</h4>
+                                    <p>Structure formation, dark matter, and mapping the large-scale universe.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="timeline-day">Day 4</span>
+                                <div>
+                                    <h4>Exoplanets & time-domain</h4>
+                                    <p>Transit and radial-velocity techniques, variable stars, and transients.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="timeline-day">Day 5</span>
+                                <div>
+                                    <h4>Instrumentation & data</h4>
+                                    <p>Detectors, telescopes, pipelines, and how big surveys are actually run.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="timeline-day">Day 6–7</span>
+                                <div>
+                                    <h4>Mini-projects & presentations</h4>
+                                    <p>Small group projects with mentoring, culminating in short presentations.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="program-details">
+                        <h3>What you’ll learn</h3>
+                        <ul class="pill-list">
+                            <li>Basics of observational & theoretical astrophysics</li>
+                            <li>Python for astronomy (NumPy, Astropy, Matplotlib)</li>
+                            <li>Working with survey catalogues & time-series data</li>
+                            <li>Uncertainties, fitting, and model comparison</li>
+                            <li>Introduction to machine learning in astronomy</li>
+                            <li>Science communication & presenting your results</li>
+                        </ul>
+
+                        <h3>Daily rhythm</h3>
+                        <ul class="detail-list">
+                            <li><strong>Mornings:</strong> Short lectures & guided exercises</li>
+                            <li><strong>Afternoons:</strong> Labs, coding, and project work</li>
+                            <li><strong>Evenings:</strong> Observing (weather-dependent) & social events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPEAKERS -->
+        <section id="speakers" class="section">
+            <div class="container section-inner">
+                <header class="section-header">
+                    <h2>Lecturers & mentors</h2>
+                    <p>
+                        The 2026 lecturer list will be announced closer to the school. Below is a
+                        sample of the kinds of people you can expect to meet.
+                    </p>
+                </header>
+
+                <div class="card-grid">
+                    <article class="person-card">
+                        <div class="avatar avatar-1"></div>
+                        <h3>Dr. Alex Vega</h3>
+                        <p class="person-role">Stellar astrophysics & asteroseismology</p>
+                        <p class="person-meta">Lecturer · University of the Milky Way</p>
+                    </article>
+
+                    <article class="person-card">
+                        <div class="avatar avatar-2"></div>
+                        <h3>Prof. Mira Harper</h3>
+                        <p class="person-role">Galaxy evolution & cosmology</p>
+                        <p class="person-meta">Professor · Southern Observatory</p>
+                    </article>
+
+                    <article class="person-card">
+                        <div class="avatar avatar-3"></div>
+                        <h3>Dr. Leo Singh</h3>
+                        <p class="person-role">Exoplanets & instrumentation</p>
+                        <p class="person-meta">Instrument Scientist · Deep Sky Lab</p>
+                    </article>
+
+                    <article class="person-card">
+                        <div class="avatar avatar-4"></div>
+                        <h3>Student mentors</h3>
+                        <p class="person-role">PhD students in astronomy & astrophysics</p>
+                        <p class="person-meta">Here to help with coding, projects, and questions.</p>
+                    </article>
+                </div>
+
+                <p class="section-footnote">
+                    Interested in contributing as a lecturer or mentor? <a href="#contact">Get in touch</a>.
+                </p>
+            </div>
+        </section>
+
+        <!-- LOCATION -->
+        <section id="location" class="section section-alt">
+            <div class="container section-inner">
+                <header class="section-header">
+                    <h2>Location & practicalities</h2>
+                    <p>
+                        The school is held at a research observatory with on-site accommodation and teaching spaces.
+                        Expect quiet nights, clear skies when the weather cooperates, and plenty of time to focus.
+                    </p>
+                </header>
+
+                <div class="location-layout">
+                    <div>
+                        <h3>Where</h3>
+                        <p>
+                            <strong>Example Observatory</strong><br />
+                            Near Canberra, Australia<br />
+                            Approximately 40 minutes by car from the city centre.
+                        </p>
+
+                        <h3>Accommodation & meals</h3>
+                        <p>
+                            Participants stay in shared university accommodation. Breakfast, lunch, and dinner
+                            are provided, with options for common dietary requirements.
+                        </p>
+
+                        <h3>Travel support</h3>
+                        <p>
+                            Limited travel bursaries will be available for students who would not otherwise
+                            be able to attend. You can indicate this in your application.
+                        </p>
+                    </div>
+
+                    <div class="info-panel">
+                        <h3>Key info</h3>
+                        <ul class="detail-list">
+                            <li><strong>Dates:</strong> 12–18 January 2026</li>
+                            <li><strong>Cost:</strong> TBD · fee waivers & bursaries available</li>
+                            <li><strong>Eligibility:</strong> Senior undergrads & early grad students</li>
+                            <li><strong>Language:</strong> English</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- APPLY -->
+        <section id="apply" class="section section-highlight">
+            <div class="container section-inner">
+                <header class="section-header">
+                    <h2>How to apply</h2>
+                    <p>
+                        We aim to create a small, supportive cohort with a mix of backgrounds and experiences.
+                        You don’t need to have research experience, but you should be curious and ready to learn.
+                    </p>
+                </header>
+
+                <div class="apply-layout">
+                    <div>
+                        <h3>Application requirements</h3>
+                        <ul class="detail-list">
+                            <li>A short statement of interest (max 1 page)</li>
+                            <li>A brief CV or academic transcript</li>
+                            <li>One reference contact (no letter required at application stage)</li>
+                        </ul>
+                        <p class="application-note">
+                            Detailed instructions will appear here once the application portal opens.
+                        </p>
+                    </div>
+
+                    <div class="apply-panel">
+                        <p class="apply-status">Applications open: <strong>1 July 2025</strong></p>
+                        <p class="apply-status">Applications close: <strong>1 October 2025</strong></p>
+                        <p class="apply-status">Decisions communicated by: <strong>1 November 2025</strong></p>
+
+                        <!-- Replace # with your actual form link later -->
+                        <a href="#" class="btn btn-primary btn-block disabled" aria-disabled="true">
+                            Application portal coming soon
+                        </a>
+                        <p class="apply-help">
+                            Have questions now? <a href="#contact">Contact the organisers</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section">
+            <div class="container section-inner">
+                <header class="section-header">
+                    <h2>Frequently asked questions</h2>
+                </header>
+
+                <div class="faq-grid">
+                    <details class="faq-item">
+                        <summary>Do I need to know a lot of astronomy already?</summary>
+                        <p>
+                            No. We expect you to have taken at least one university-level physics or astronomy
+                            course, but you don’t need to be an expert. We’ll provide refreshers where needed.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>How much coding experience is required?</summary>
+                        <p>
+                            Basic familiarity with Python is helpful, but we’ll provide starter notebooks and
+                            support. If you’re motivated, you’ll be fine.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Is there financial support?</summary>
+                        <p>
+                            We aim to offer fee waivers and travel support for students who need it, subject to
+                            available funding. More information will be published before applications open.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Can I attend remotely?</summary>
+                        <p>
+                            This is an in-person residential school, and most activities rely on being on-site.
+                            We may share some materials publicly after the school.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section section-alt">
+            <div class="container section-inner">
+                <header class="section-header">
+                    <h2>Contact</h2>
+                    <p>
+                        Questions about eligibility, accessibility, or logistics? We’re happy to help.
+                    </p>
+                </header>
+
+                <div class="contact-panel">
+                    <p>
+                        Email: <a href="mailto:summerschool@example.edu">summerschool@example.edu</a><br />
+                        Organising committee: Southern Skies Summer School
+                    </p>
+                    <p class="contact-note">
+                        You can also follow updates on our GitHub repository once it’s live.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2025 Southern Skies Student Astronomy Summer School</p>
+            <p class="footer-meta">
+                Built with starlight &middot; Hosted on <a href="https://pages.github.com/" target="_blank"
+                    rel="noreferrer">GitHub Pages</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
