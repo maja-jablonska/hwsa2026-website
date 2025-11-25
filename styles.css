@@ -203,6 +203,14 @@ body {
     padding: 4rem 0 4.5rem;
 }
 
+.eyebrow {
+    margin: 0 0 0.65rem;
+    font-size: 1.05rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
 .hero-inner {
     display: grid;
     grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
@@ -212,7 +220,7 @@ body {
 
 .hero-content h1 {
     font-family: "Space Grotesk", system-ui, sans-serif;
-    font-size: clamp(2.3rem, 4vw, 3rem);
+    font-size: clamp(2.15rem, 3.7vw, 2.85rem);
     margin: 0 0 0.9rem;
 }
 
@@ -769,7 +777,7 @@ a:hover {
     }
 
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
     .orbit-card {
