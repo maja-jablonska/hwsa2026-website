@@ -44,3 +44,91 @@ const onScroll = () => {
 
 window.addEventListener("scroll", onScroll);
 onScroll();
+
+// Lecturer bio expand / collapse (animated accordion: close others first, then open)
+let bioAccordionSeq = 0;
+const BIO_CLOSE_MS = 480; // slightly above CSS grid transition (0.42s)
+
+function syncBioClosed(panel, toggleBtn) {
+    panel.classList.remove("is-open");
+    toggleBtn.classList.remove("is-open");
+    toggleBtn.setAttribute("aria-expanded", "false");
+    panel.setAttribute("aria-hidden", "true");
+    const label = toggleBtn.querySelector(".bio-toggle-label");
+    if (label) label.textContent = "See Bio";
+}
+
+function syncBioOpen(panel, toggleBtn) {
+    panel.classList.add("is-open");
+    toggleBtn.classList.add("is-open");
+    toggleBtn.setAttribute("aria-expanded", "true");
+    panel.setAttribute("aria-hidden", "false");
+    const label = toggleBtn.querySelector(".bio-toggle-label");
+    if (label) label.textContent = "Hide Bio";
+}
+
+document.querySelectorAll(".bio-toggle").forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const panel = btn.nextElementSibling;
+        if (!panel || !panel.classList.contains("person-bio")) return;
+
+        if (panel.classList.contains("is-open")) {
+            bioAccordionSeq += 1;
+            syncBioClosed(panel, btn);
+            return;
+        }
+
+        bioAccordionSeq += 1;
+        const seq = bioAccordionSeq;
+
+        const openClicked = () => {
+            if (seq !== bioAccordionSeq) return;
+            syncBioOpen(panel, btn);
+        };
+
+        const openPanels = [...document.querySelectorAll(".person-bio.is-open")];
+
+        if (openPanels.length === 0) {
+            openClicked();
+            return;
+        }
+
+        const closingPanel = openPanels[0];
+        openPanels.forEach((p) => {
+            const otherBtn = p.previousElementSibling;
+            if (otherBtn?.classList.contains("bio-toggle")) {
+                syncBioClosed(p, otherBtn);
+            }
+        });
+
+        const onEnd = (e) => {
+            if (e.propertyName !== "grid-template-rows") return;
+            if (seq !== bioAccordionSeq) return;
+            clearTimeout(fallback);
+            closingPanel.removeEventListener("transitionend", onEnd);
+            openClicked();
+        };
+
+        const fallback = setTimeout(() => {
+            closingPanel.removeEventListener("transitionend", onEnd);
+            if (seq !== bioAccordionSeq) return;
+            openClicked();
+        }, BIO_CLOSE_MS);
+
+        closingPanel.addEventListener("transitionend", onEnd);
+    });
+});
+
+// FAQ unrolling (same grid animation as lecturer bios; independent toggles)
+document.querySelectorAll(".faq-summary").forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const item = btn.closest(".faq-item");
+        const panel = item?.querySelector(".faq-answer");
+        if (!item || !panel) return;
+
+        const open = !item.classList.contains("is-open");
+        item.classList.toggle("is-open", open);
+        btn.setAttribute("aria-expanded", String(open));
+        panel.setAttribute("aria-hidden", String(!open));
+    });
+});
