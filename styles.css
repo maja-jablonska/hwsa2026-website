@@ -90,6 +90,12 @@ body {
     color: var(--text-muted);
 }
 
+#about .section-header,
+#program .section-header,
+#location .section-header {
+    max-width: none;
+}
+
 /* Header / nav */
 .site-header {
     position: sticky;
@@ -301,6 +307,17 @@ body {
 
 .btn-block {
     width: 100%;
+}
+
+.btn-lg {
+    padding: 1.05rem 2.25rem;
+    font-size: 1rem;
+}
+
+.about-faq-cta {
+    margin-top: 2.75rem;
+    display: flex;
+    justify-content: center;
 }
 
 .btn.disabled {

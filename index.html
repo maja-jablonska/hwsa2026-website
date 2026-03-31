@@ -8,6 +8,24 @@
     <meta name="description"
         content="An astronomy school for postgraduate students in conjunction with the ASA annual meeting." />
 
+    <link rel="icon" href="static/images/logo.png" type="image/png" />
+
+    <!-- Social / link previews (og:image must be absolute; update base if you use a custom domain) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Harley Wood School of Astronomy 2026" />
+    <meta property="og:description"
+        content="An astronomy school for postgraduate students in conjunction with the ASA annual meeting." />
+    <meta property="og:image" content="https://maja-jablonska.github.io/hwsa2026-website/static/images/logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:url" content="https://maja-jablonska.github.io/hwsa2026-website/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Harley Wood School of Astronomy 2026" />
+    <meta name="twitter:description"
+        content="An astronomy school for postgraduate students in conjunction with the ASA annual meeting." />
+    <meta name="twitter:image" content="https://maja-jablonska.github.io/hwsa2026-website/static/images/logo.png" />
+
+    <link rel="canonical" href="https://maja-jablonska.github.io/hwsa2026-website/" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,15 +91,8 @@
                     </p>
                 </div>
 
-                <div class="hero-visual" aria-hidden="true">
-                    <div class="orbit-card">
-                        <div class="orbit orbit-1"></div>
-                        <div class="orbit orbit-2"></div>
-                        <div class="orbit orbit-3"></div>
-                        <div class="planet planet-main"></div>
-                        <div class="planet planet-small"></div>
-                        <div class="planet planet-tiny"></div>
-                    </div>
+                <div class="hero-visual" aria-hidden="true" style="max-width: 400px; width: 100%;">
+                    <img src="static/images/logo.png" alt="HWSA Logo" class="hero-logo" style="width: 100%; height: auto; display: block;">
                 </div>
             </div>
         </section>
@@ -93,7 +104,7 @@
                     <h2>About the school</h2>
                     <p>
                         The School will feature 2 days of lectures and hands-on sessions, with the remaining time
-                        dedicated to networking activities. This year, we are focusing on the topic of linking observations and simulations, with
+                        dedicated to networking activities. The registration fee includes 3 nights of acommodation, transport to and from the venue, and all meals. This year, we are focusing on the topic of linking observations and simulations, with
                         particular emphasis on the role of high-performance computing, big data, and machine learning in this process.
                     </p>
                 </header>
@@ -121,6 +132,10 @@
                         </p>
                     </article>
                 </div>
+
+                <div class="about-faq-cta">
+                    <a href="#faq" class="btn btn-primary btn-lg">View FAQ</a>
+                </div>
             </div>
         </section>
 
@@ -130,9 +145,7 @@
                 <header class="section-header">
                     <h2>Program overview</h2>
                     <p>
-                        A balanced mix of lectures, hands-on labs, project time, and evening activities.
-                        The final schedule will be published closer to the event, but the structure
-                        will look roughly like this:
+                        We will publish the full program soon!
                     </p>
                 </header>
 
@@ -291,20 +304,18 @@
                         <div class="avatar" style="background: radial-gradient(circle, #f43f5e 0%, #3b82f6 100%); width:96px; height:96px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2.5em; color:white; font-weight:bold; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
                             <span>⭐️</span>
                         </div>
-                        <h3>TBD</h3>
-                        <p class="person-role" style="flex-grow: 1;"></p>
-                        <!-- <p class="person-role">TBD</p>
-                        <p class="person-meta">TBD</p> -->
+                        <h3>Katie Auchettl</h3>
+                        <p class="person-role">University of Melbourne</p>
+                        <!-- <p class="person-meta">TBD</p> -->
                     </article>
 
                     <article class="person-card" style="display: flex; flex-direction: column;">
                         <div class="avatar" style="background: radial-gradient(circle, #10b981 0%, #06b6d4 100%); width:96px; height:96px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2.5em; color:white; font-weight:bold; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
                             <span>🌟</span>
                         </div>
-                        <h3>TBD</h3>
-                        <p class="person-role" style="flex-grow: 1;"></p>
-                        <!-- <p class="person-role">TBD</p>
-                        <p class="person-meta">TBD</p> -->
+                        <h3>Radioastronomy Expert</h3>
+                        <p class="person-role">CSIRO</p>
+                        <!--<p class="person-meta">TBD</p> -->
                     </article>
 
                     <article class="person-card" style="display: flex; flex-direction: column;">
@@ -393,6 +404,58 @@
 
                 <div class="faq-grid">
                     <div class="faq-item">
+                        <button type="button" class="faq-summary" aria-expanded="false" aria-controls="faq-answer-3" id="faq-trigger-3">
+                            <span class="faq-summary-label">What is included in the $550 registration fee?</span>
+                            <span class="faq-summary-chevron" aria-hidden="true">▼</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-trigger-3" aria-hidden="true">
+                            <div class="faq-answer-inner">
+                                <p>
+                                    3 nights of acommodation, transport to and from the venue, and all meals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button type="button" class="faq-summary" aria-expanded="false" aria-controls="faq-answer-3" id="faq-trigger-3">
+                            <span class="faq-summary-label">How should I get to the Harley Wood School?</span>
+                            <span class="faq-summary-chevron" aria-hidden="true">▼</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-trigger-3" aria-hidden="true">
+                            <div class="faq-answer-inner">
+                                <p>
+                                    We will arrange a bus from Canberra Airport to the venue and back. You can also drive (parking is available on site).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button type="button" class="faq-summary" aria-expanded="false" aria-controls="faq-answer-3" id="faq-trigger-3">
+                            <span class="faq-summary-label">Do attendees also need to attend the ASA meeting in Canberra?</span>
+                            <span class="faq-summary-chevron" aria-hidden="true">▼</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-trigger-3" aria-hidden="true">
+                            <div class="faq-answer-inner">
+                                <p>
+                                    No - but you might like to!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button type="button" class="faq-summary" aria-expanded="false" aria-controls="faq-answer-3" id="faq-trigger-3">
+                            <span class="faq-summary-label">Do I need to prepare a presentation for the HWSA?</span>
+                            <span class="faq-summary-chevron" aria-hidden="true">▼</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-trigger-3" aria-hidden="true">
+                            <div class="faq-answer-inner">
+                                <p>
+                                    We only ask for a short, 1-minute, sparkler-style slide on your research for the first day of the school. This is just to get to know each other!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
                         <button type="button" class="faq-summary" aria-expanded="false" aria-controls="faq-answer-1" id="faq-trigger-1">
                             <span class="faq-summary-label">Can I come to only one day of the school?</span>
                             <span class="faq-summary-chevron" aria-hidden="true">▼</span>
@@ -431,6 +494,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </section>
@@ -459,9 +523,6 @@
                         <li><strong>Lewis Miller</strong> – LOC Chair <i>(ANU)</i>
                         </li>
                         <li><strong>Neelesh Amrutha</strong>
-                            <i>(ANU)</i>
-                        </li>
-                        <li><strong>Kritika Halder</strong>
                             <i>(ANU)</i>
                         </li>
                         <li><strong>Sophie Kim</strong>
