@@ -149,57 +149,215 @@
                     </p>
                 </header>
 
-                <div class="program-layout">
-                    <div class="program-timeline">
-                        <h3>Sample week</h3>
-                        <ul class="timeline">
-                            <li>
-                                <span class="timeline-day">Day 1 (Thursday 2nd July)</span>
-                                <div>
-                                    <h4>Attendees arrive</h4>
-                                    <p>Some networking events followed by a dinner</p>
+                <div class="schedule-block">
+                    <h3 class="program-subheading">Schedule</h3>
+                    <p class="schedule-note">
+                        Detailed times are indicative; the final program will be published before the school.
+                    </p>
+                    <div class="schedule-grid">
+                        <div class="schedule-item">
+                            <button type="button" class="schedule-summary" aria-expanded="false"
+                                aria-controls="schedule-answer-1" id="schedule-trigger-1">
+                                <span class="schedule-summary-label">Day 1 — Thursday 2 July (arrival)</span>
+                                <span class="schedule-summary-chevron" aria-hidden="true">▼</span>
+                            </button>
+                            <div class="schedule-answer" id="schedule-answer-1" role="region"
+                                aria-labelledby="schedule-trigger-1" aria-hidden="true">
+                                <div class="schedule-answer-inner">
+                                    <table class="schedule-table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Time</th>
+                                                <th scope="col">Activity</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>12:00 PM - 6:00 PM</td>
+                                                <td>Arrival and check-in</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5:30 PM - 7:00 PM</td>
+                                                <td>Dinner</td>
+                                            </tr>
+                                            <tr>
+                                            <td>7:00 PM - 8:30 PM</td>
+                                                <td>Networking session</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                            </li>
-                            <li>
-                                <span class="timeline-day">Day 2 (Friday 3rd July)</span>
-                                <div>
-                                    <h4>Lectures & Workshops</h4>
-                                    <p>Theory, simulations, and models</p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="timeline-day">Day 3 (Saturday 4th July)</span>
-                                <div>
-                                    <h4>Lectures & Workshops</h4>
-                                    <p>Observations, data analysis, and machine learning</p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="timeline-day">Day 4 (Sunday 5th July)</span>
-                                <div>
-                                    <h4>Attendees Leave</h4>
-                                    <p>Breakfast and departure</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                            </div>
+                        </div>
 
-                    <div class="program-details">
-                        <h3>What you’ll learn</h3>
-                        <ul class="pill-list">
-                            <li>Working with observations and simulations</li>
-                            <li>Programming techniques</li>
-                            <li>Machine learning for astronomy</li>
-                            <li>Future facilities and surveys</li>
-                            <li>More to be announced!</li>
-                        </ul>
+                        <div class="schedule-item">
+                            <button type="button" class="schedule-summary" aria-expanded="false"
+                                aria-controls="schedule-answer-2" id="schedule-trigger-2">
+                                <span class="schedule-summary-label">Day 2 — Friday 3 July</span>
+                                <span class="schedule-summary-chevron" aria-hidden="true">▼</span>
+                            </button>
+                            <div class="schedule-answer" id="schedule-answer-2" role="region"
+                                aria-labelledby="schedule-trigger-2" aria-hidden="true">
+                                <div class="schedule-answer-inner">
+                                    <table class="schedule-table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Time</th>
+                                                <th scope="col">Activity</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>8:00 AM - 9:00 AM</td>
+                                                <td>Breakfast</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9:00 AM - 10:00 AM</td>
+                                                <td>Talk 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10:00 AM - 10:30 AM</td>
+                                                <td>Morning Tea</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10:30 AM - 11:30 AM</td>
+                                                <td>Talk 2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11:30 AM - 12:30 PM</td>
+                                                <td>Talk 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12:30 PM - 1:30 PM</td>
+                                                <td>Lunch</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1:30 PM - 3:30 PM</td>
+                                                <td>Workshop</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3:30 PM - 4:00 PM</td>
+                                                <td>Afternoon Tea</td>
+                                            </tr>
+                                            <tr> 
+                                                <td>4:00 PM - 5:00 PM</td>
+                                                <td>Talk 4</td>
+                                            </tr>
+                                            <tr> 
+                                                <td>5:30 PM - 6:30 PM</td>
+                                                <td>Dinner</td>
+                                            </tr>
+                                            <tr> 
+                                                <td>7:00 PM - ...</td>
+                                                <td>Networking session</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
 
-                        <h3>Daily rhythm</h3>
-                        <ul class="detail-list">
-                            <li><strong>Mornings:</strong> Lectures</li>
-                            <li><strong>Afternoons:</strong> Workshops</li>
-                            <li><strong>Evenings:</strong> Social events</li>
-                        </ul>
+                        <div class="schedule-item">
+                            <button type="button" class="schedule-summary" aria-expanded="false"
+                                aria-controls="schedule-answer-3" id="schedule-trigger-3">
+                                <span class="schedule-summary-label">Day 3 — Saturday 4 July</span>
+                                <span class="schedule-summary-chevron" aria-hidden="true">▼</span>
+                            </button>
+                            <div class="schedule-answer" id="schedule-answer-3" role="region"
+                                aria-labelledby="schedule-trigger-3" aria-hidden="true">
+                                <div class="schedule-answer-inner">
+                                    <table class="schedule-table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Time</th>
+                                                <th scope="col">Activity</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>8:00 AM - 9:00 AM</td>
+                                                <td>Breakfast</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9:00 AM - 10:00 AM</td>
+                                                <td>Talk 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10:00 AM - 10:30 AM</td>
+                                                <td>Morning Tea</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10:30 AM - 11:30 AM</td>
+                                                <td>Talk 2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11:30 AM - 12:30 PM</td>
+                                                <td>Talk 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12:30 PM - 1:30 PM</td>
+                                                <td>Lunch</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1:30 PM - 3:30 PM</td>
+                                                <td>Workshop</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3:30 PM - 4:00 PM</td>
+                                                <td>Afternoon Tea</td>
+                                            </tr>
+                                            <tr> 
+                                                <td>4:00 PM - 5:00 PM</td>
+                                                <td>Talk 4</td>
+                                            </tr>
+                                            <tr> 
+                                                <td>5:30 PM - 6:30 PM</td>
+                                                <td>Dinner</td>
+                                            </tr>
+                                            <tr> 
+                                                <td>7:00 PM - ...</td>
+                                                <td>Networking session</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item">
+                            <button type="button" class="schedule-summary" aria-expanded="false"
+                                aria-controls="schedule-answer-4" id="schedule-trigger-4">
+                                <span class="schedule-summary-label">Day 4 — Sunday 5 July (departure)</span>
+                                <span class="schedule-summary-chevron" aria-hidden="true">▼</span>
+                            </button>
+                            <div class="schedule-answer" id="schedule-answer-4" role="region"
+                                aria-labelledby="schedule-trigger-4" aria-hidden="true">
+                                <div class="schedule-answer-inner">
+                                    <table class="schedule-table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Time</th>
+                                                <th scope="col">Activity</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>8:00 AM - 9:00 AM</td>
+                                                <td>Breakfast</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9:00 AM - 12:00 PM</td>
+                                                <td>Relaxing</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12:00 PM - ...</td>
+                                                <td>Departure to Canberra</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -301,21 +459,35 @@
                     </article>
 
                     <article class="person-card" style="display: flex; flex-direction: column;">
-                        <div class="avatar" style="background: radial-gradient(circle, #f43f5e 0%, #3b82f6 100%); width:96px; height:96px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2.5em; color:white; font-weight:bold; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
-                            <span>⭐️</span>
+                        <div class="avatar avatar-img" style="background: none; padding: 0; box-shadow: 0 2px 12px rgba(0,0,0,0.08); width:96px; height:96px; border-radius:50%; overflow:hidden; display:flex; align-items:center; justify-content:center;">
+                            <img src="static/images/heald.jpg" alt="George Heald" style="width:96px;height:96px;border-radius:50%;display:block;object-fit:cover;"/>
                         </div>
-                        <h3>Katie Auchettl</h3>
-                        <p class="person-role">University of Melbourne</p>
-                        <!-- <p class="person-meta">TBD</p> -->
+                        <h3>George Heald</h3>
+                        <p class="person-role" style="flex-grow: 1;">CSIRO</p>
+                        <button type="button" class="bio-toggle" aria-expanded="false" aria-controls="bio-speaker-heald" id="bio-toggle-heald">
+                            <span class="bio-toggle-label">See Bio</span><span class="bio-toggle-chevron" aria-hidden="true">▼</span>
+                        </button>
+                        <div class="person-bio" id="bio-speaker-heald" role="region" aria-labelledby="bio-toggle-heald" aria-hidden="true">
+                            <div class="person-bio-inner">
+                                <p class="person-meta">George Heald is the Lead Commissioning Scientist for the SKA-Low telescope, which is currently under construction in Western Australia. He received his PhD in 2006 at the University of New Mexico. He worked for a decade at ASTRON in the Netherlands, then moved to Australia in 2016 to work at CSIRO, eventually leading the ATNF Science program. He moved to the SKA Observatory in 2024. His research interests include neutral hydrogen in galaxies, cosmic magnetism, and “making radio telescopes work”.</p>
+                            </div>
+                        </div>
                     </article>
 
                     <article class="person-card" style="display: flex; flex-direction: column;">
-                        <div class="avatar" style="background: radial-gradient(circle, #10b981 0%, #06b6d4 100%); width:96px; height:96px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2.5em; color:white; font-weight:bold; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
-                            <span>🌟</span>
+                        <div class="avatar avatar-img" style="background: none; padding: 0; box-shadow: 0 2px 12px rgba(0,0,0,0.08); width:96px; height:96px; border-radius:50%; overflow:hidden; display:flex; align-items:center; justify-content:center;">
+                            <img src="static/images/rajika.jpg" alt="Rajika Kuruwita" style="width:96px;height:96px;border-radius:50%;display:block;object-fit:cover;"/>
                         </div>
-                        <h3>TBD</h3>
-                        <p class="person-role">CSIRO</p>
-                        <!--<p class="person-meta">TBD</p> -->
+                        <h3>Rajika Kuruwita</h3>
+                        <p class="person-role" style="flex-grow: 1;">Research School of Astronomy and Astrophysics, ANU</p>
+                        <button type="button" class="bio-toggle" aria-expanded="false" aria-controls="bio-speaker-kuruwita" id="bio-toggle-kuruwita">
+                            <span class="bio-toggle-label">See Bio</span><span class="bio-toggle-chevron" aria-hidden="true">▼</span>
+                        </button>
+                        <div class="person-bio" id="bio-speaker-kuruwita" role="region" aria-labelledby="bio-toggle-kuruwita" aria-hidden="true">
+                            <div class="person-bio-inner">
+                                <p class="person-meta">Dr. Rajika Kuruwita returned to the Australian National University as a Postdoc, 7 years after she got her PhD there in 2019. During her time away she was an EU Interactions Fellow at the Niels Bohr Institute at the University of Copenhagen, and then she was the first HITS Independent Postdoc at the Heidelberg Institute for Theoretical Studies. Her work uses 3D Magnetohydrodynamical simulations to model the formation of binary and multiple star systems from cluster scales down to circumstellar discs. She likes to look at how early interactions between stars could help, or hinder planet formation.</p>
+                            </div>
+                        </div>
                     </article>
 
                     <article class="person-card" style="display: flex; flex-direction: column;">

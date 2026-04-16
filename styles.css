@@ -536,6 +536,110 @@ body {
     color: var(--text-muted);
 }
 
+.schedule-block {
+    margin-top: 3rem;
+}
+
+.program-subheading {
+    margin: 0 0 0.5rem;
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-size: 1.35rem;
+    letter-spacing: 0.03em;
+}
+
+.schedule-note {
+    margin: 0 0 1.25rem;
+    font-size: 0.94rem;
+    color: var(--text-muted);
+}
+
+.schedule-grid {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.schedule-item {
+    border-radius: var(--radius-lg);
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border-subtle);
+    background: rgba(7, 10, 28, 0.95);
+}
+
+.faq-summary,
+.schedule-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-summary:focus-visible,
+.schedule-summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+.faq-summary-chevron,
+.schedule-summary-chevron {
+    flex-shrink: 0;
+    font-size: 0.75em;
+    opacity: 0.85;
+    line-height: 1;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.35rem;
+    font-size: 0.92rem;
+}
+
+.schedule-table thead th {
+    padding: 0.45rem 0.65rem 0.35rem 0;
+    text-align: left;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.schedule-table tbody td {
+    padding: 0.55rem 0.65rem 0.55rem 0;
+    vertical-align: top;
+    color: var(--text-muted);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.schedule-table tbody td:first-child {
+    width: 38%;
+    max-width: 11rem;
+    white-space: nowrap;
+    color: var(--text);
+    font-variant-numeric: tabular-nums;
+}
+
+.schedule-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 600px) {
+    .schedule-table tbody td:first-child {
+        white-space: normal;
+    }
+}
+
 /* Speakers / cards */
 .card-grid {
     display: grid;
@@ -618,7 +722,8 @@ body {
 }
 
 .bio-toggle-chevron,
-.faq-summary-chevron {
+.faq-summary-chevron,
+.schedule-summary-chevron {
     display: inline-block;
     transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -628,25 +733,29 @@ body {
 }
 
 .bio-toggle.is-open .bio-toggle-chevron,
-.faq-item.is-open .faq-summary-chevron {
+.faq-item.is-open .faq-summary-chevron,
+.schedule-item.is-open .schedule-summary-chevron {
     transform: rotate(180deg);
 }
 
-/* Unrolling disclosure panels (lecturer bios, FAQ) */
+/* Unrolling disclosure panels (lecturer bios, FAQ, schedule) */
 .person-bio,
-.faq-answer {
+.faq-answer,
+.schedule-answer {
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.42s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .person-bio.is-open,
-.faq-item.is-open .faq-answer {
+.faq-item.is-open .faq-answer,
+.schedule-item.is-open .schedule-answer {
     grid-template-rows: 1fr;
 }
 
 .person-bio-inner,
-.faq-answer-inner {
+.faq-answer-inner,
+.schedule-answer-inner {
     min-height: 0;
     overflow: hidden;
 }
@@ -658,12 +767,14 @@ body {
 @media (prefers-reduced-motion: reduce) {
 
     .person-bio,
-    .faq-answer {
+    .faq-answer,
+    .schedule-answer {
         transition-duration: 0.01ms;
     }
 
     .bio-toggle-chevron,
-    .faq-summary-chevron {
+    .faq-summary-chevron,
+    .schedule-summary-chevron {
         transition-duration: 0.01ms;
     }
 }
@@ -731,36 +842,6 @@ body {
     padding: 0.8rem 1rem;
     border: 1px solid var(--border-subtle);
     background: rgba(7, 10, 28, 0.95);
-}
-
-.faq-summary {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background: none;
-    color: inherit;
-    font: inherit;
-    font-weight: 500;
-    text-align: left;
-    cursor: pointer;
-}
-
-.faq-summary:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 3px;
-    border-radius: 4px;
-}
-
-.faq-summary-chevron {
-    flex-shrink: 0;
-    font-size: 0.75em;
-    opacity: 0.85;
-    line-height: 1;
 }
 
 .faq-answer-inner p {

@@ -119,11 +119,11 @@ document.querySelectorAll(".bio-toggle").forEach((btn) => {
     });
 });
 
-// FAQ unrolling (same grid animation as lecturer bios; independent toggles)
-document.querySelectorAll(".faq-summary").forEach((btn) => {
+// FAQ & schedule unrolling (same grid animation as lecturer bios; independent toggles)
+document.querySelectorAll(".faq-summary, .schedule-summary").forEach((btn) => {
     btn.addEventListener("click", () => {
-        const item = btn.closest(".faq-item");
-        const panel = item?.querySelector(".faq-answer");
+        const item = btn.closest(".faq-item, .schedule-item");
+        const panel = item?.querySelector(".faq-answer, .schedule-answer");
         if (!item || !panel) return;
 
         const open = !item.classList.contains("is-open");
