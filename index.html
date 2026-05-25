@@ -491,13 +491,19 @@
                     </article>
 
                     <article class="person-card" style="display: flex; flex-direction: column;">
-                        <div class="avatar" style="background: radial-gradient(circle, #8b5cf6 0%, #ec4899 100%); width:96px; height:96px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2.5em; color:white; font-weight:bold; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
-                            <span>✨</span>
+                        <div class="avatar avatar-img" style="background: none; padding: 0; box-shadow: 0 2px 12px rgba(0,0,0,0.08); width:96px; height:96px; border-radius:50%; overflow:hidden; display:flex; align-items:center; justify-content:center;">
+                            <img src="static/images/iris.jpg" alt="Iris de Ruiter" style="width:96px;height:96px;border-radius:50%;display:block;object-fit:cover;"/>
                         </div>
-                        <h3>TBD</h3>
-                        <p class="person-role" style="flex-grow: 1;"></p>
-                        <!-- <p class="person-role">TBD</p>
-                        <p class="person-meta">TBD</p> -->
+                        <h3>Iris de Ruiter</h3>
+                        <p class="person-role" style="flex-grow: 1;">University of Sydney</p>
+                        <button type="button" class="bio-toggle" aria-expanded="false" aria-controls="bio-speaker-iris" id="bio-toggle-kuruwita">
+                            <span class="bio-toggle-label">See Bio</span><span class="bio-toggle-chevron" aria-hidden="true">▼</span>
+                        </button>
+                        <div class="person-bio" id="bio-speaker-iris" role="region" aria-labelledby="bio-toggle-kuruwita" aria-hidden="true">
+                            <div class="person-bio-inner">
+                                <p class="person-meta">Dr. Iris de Ruiter is a postdoctoral researcher with OzGrav at the University of Sydney. She works on finding and making sense of radio transients, using large survey data and follow‑up observations with telescopes such as ASKAP, ATCA, and MeerKAT. She is particularly interested in long‑period radio transients and the quirky radio behaviour of white dwarf binaries. Iris earned her PhD cum laude from the University of Amsterdam, where she led systematic searches for low‑frequency radio transients using LOFAR.</p>
+                            </div>
+                        </div>
                     </article>
                 </div>
             </div>
