@@ -132,3 +132,18 @@ document.querySelectorAll(".faq-summary, .schedule-summary").forEach((btn) => {
         panel.setAttribute("aria-hidden", String(!open));
     });
 });
+
+// Talk abstracts unrolling (independent toggles per talk row)
+document.querySelectorAll(".talk-toggle").forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const controlsId = btn.getAttribute("aria-controls");
+        const panel = controlsId ? document.getElementById(controlsId) : null;
+        if (!panel) return;
+
+        const open = !panel.classList.contains("is-open");
+        panel.classList.toggle("is-open", open);
+        btn.classList.toggle("is-open", open);
+        btn.setAttribute("aria-expanded", String(open));
+        panel.setAttribute("aria-hidden", String(!open));
+    });
+});

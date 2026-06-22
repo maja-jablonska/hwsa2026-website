@@ -634,6 +634,103 @@ body {
     border-bottom: none;
 }
 
+.schedule-table .talk-title {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: 0.85em;
+    font-style: italic;
+    color: var(--text-muted);
+    opacity: 0.85;
+}
+
+/* Expandable talk rows (click to reveal abstract) */
+.talk-row td {
+    border-bottom: none;
+}
+
+.talk-toggle {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.6rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.talk-toggle:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+.talk-toggle:hover .talk-toggle-chevron {
+    opacity: 1;
+}
+
+.talk-toggle-text {
+    display: block;
+    min-width: 0;
+}
+
+.talk-toggle-chevron {
+    display: inline-block;
+    flex-shrink: 0;
+    font-size: 0.75em;
+    line-height: 1;
+    margin-top: 0.3em;
+    opacity: 0.55;
+    transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+}
+
+.talk-toggle.is-open .talk-toggle-chevron {
+    transform: rotate(180deg);
+    opacity: 1;
+}
+
+.talk-abstract-row td {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.talk-abstract {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.42s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.talk-abstract.is-open {
+    grid-template-rows: 1fr;
+}
+
+.talk-abstract-inner {
+    min-height: 0;
+    overflow: hidden;
+}
+
+.talk-abstract-inner p {
+    margin: 0.5rem 0 0.75rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .talk-abstract {
+        transition-duration: 0.01ms;
+    }
+
+    .talk-toggle-chevron {
+        transition-duration: 0.01ms;
+    }
+}
+
 @media (max-width: 600px) {
     .schedule-table tbody td:first-child {
         white-space: normal;
@@ -783,6 +880,83 @@ body {
     margin-top: 1.4rem;
     font-size: 0.9rem;
     color: var(--text-muted);
+}
+
+/* Organising committee gallery */
+.organisers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.organiser-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.2rem 0.9rem 1rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-subtle);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(140, 241, 255, 0.06));
+    box-shadow: var(--shadow-subtle);
+}
+
+.organiser-avatar {
+    width: 78px;
+    height: 78px;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 22px rgba(140, 241, 255, 0.45);
+}
+
+.organiser-avatar img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+.organiser-initials {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #050614;
+    line-height: 1;
+}
+
+.organiser-name {
+    margin: 0 0 0.25rem;
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.25;
+}
+
+.organiser-role {
+    margin: 0;
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.organiser-affiliation {
+    margin: 0.25rem 0 0;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
 }
 
 /* Location */
